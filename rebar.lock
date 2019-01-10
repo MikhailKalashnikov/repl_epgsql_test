@@ -1,0 +1,4 @@
+[{<<"epgsql">>,
+  {git,"https://github.com/SIfoxDevTeam/epgsql.git",
+       {ref,"15ea223e6ac2df31b9c95df1db58b6e4a3deff8e"}},
+  0}].

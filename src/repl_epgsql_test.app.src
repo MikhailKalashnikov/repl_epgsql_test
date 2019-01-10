@@ -1,0 +1,6 @@
+{application, repl_epgsql_test, [
+    {description, "PostgreSQL streaming replication test app"},
+    {vsn, "0.0.1"},
+    {applications, [kernel, stdlib, epgsql]},
+    {mod, {repl_epgsql_test_app, []}}
+]}.

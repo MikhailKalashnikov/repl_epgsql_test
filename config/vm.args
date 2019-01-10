@@ -1,0 +1,25 @@
+## Name of the node
+-name repl_epgsql_test@127.0.0.1
+
+## Cookie for distributed erlang
+-setcookie erlang
+
+## Enable kernel poll and a few async threads
++K true
++A 50
+
+-env ERL_CRASH_DUMP log/erl_crash.dump
+
+## Increase the maximum number of the allowed processes
++P 256000
+
+## Increase number of concurrent ports/sockets
+##-env ERL_MAX_PORTS 4096
+
+## Tweak GC to run more often
+##-env ERL_FULLSWEEP_AFTER 10
+
+#-env ERL_MAX_ETS_TABLES 256000
+
+## Tweak GC to run more often
+#-env ERL_FULLSWEEP_AFTER 0
